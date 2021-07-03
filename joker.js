@@ -11,6 +11,8 @@ window.addEventListener('click', () => {
 
     const joker = search.cloneNode(true);
     joker.setAttribute('id', 'joker');
+    joker.setAttribute('title', 'Joker');
+    joker.setAttribute('aria-label', 'Joker');
     joker.addEventListener('click', () => {
         const inputText = document.querySelector("#main > footer > div.vR1LG._3wXwX.copyable-area > div._2A8P4 > div > div._2_1wd.copyable-text.selectable-text");
 
