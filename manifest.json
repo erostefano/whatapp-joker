@@ -5,9 +5,6 @@
   "description": "Simply post a random joke and entertain your friends",
   "content_scripts": [
     {
-      "css": [
-        "styles.css"
-      ],
       "js": [
         "joker.js"
       ],
