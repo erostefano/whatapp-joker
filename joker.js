@@ -5,6 +5,10 @@ window.addEventListener('click', () => {
 
     // create joker
     const search = document.querySelector("#main > header > div._1IeOz > div > div._2n-zq > div");
+    if (!search) {
+        return;
+    }
+
     const joker = search.cloneNode(true);
     joker.setAttribute('id', 'joker');
     joker.addEventListener('click', () => {
