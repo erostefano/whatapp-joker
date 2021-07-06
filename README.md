@@ -1,6 +1,6 @@
 # WhatsApp Web Joker
 
-This Chrome Extension adds a button by which you can send a random developer joke to your friends.
+This Chrome Extension adds a button by which you can send a random joke to your friends.
 
 ![Demo](demo.gif)
 
