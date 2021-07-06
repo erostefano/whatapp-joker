@@ -18,4 +18,3 @@ inspired to simplify this process. Mike, you are true inspiration sometimes.
 ## Credits
 
 [Awesome joker](https://www.flaticon.com/de/autoren/monkik)
-[One more awesome joker](https://www.freepik.com)

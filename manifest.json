@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "WhatsApp Web Joker",
   "version": "1.0.0",
   "description": "Simply post a random joke and entertain your friends",
@@ -15,6 +15,19 @@
       ],
       "matches": [
         "https://web.whatsapp.com/"
+      ]
+    }
+  ],
+  "host_permissions": [
+    "https://web.whatsapp.com/"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "joker.svg"
+      ],
+      "matches": [
+        "https://web.whatsapp.com/*"
       ]
     }
   ]
