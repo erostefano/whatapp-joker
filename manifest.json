@@ -1,8 +1,13 @@
 {
   "manifest_version": 2,
   "name": "WhatsApp Web Joker",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Simply post a random joke and entertain your friends",
+  "icons": {
+    "16": "joker16.png",
+    "64": "joker64.png",
+    "128": "joker128.png"
+  },
   "content_scripts": [
     {
       "js": [
