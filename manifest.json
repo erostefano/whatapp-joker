@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "description": "Simply post a random joke and entertain your friends",
   "icons": {
-    "16": "joker16.png",
-    "64": "joker64.png",
-    "128": "joker128.png"
+    "16": "img/joker16.png",
+    "64": "img/joker64.png",
+    "128": "img/joker128.png"
   },
   "content_scripts": [
     {
@@ -24,7 +24,7 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "joker.svg"
+        "img/joker.svg"
       ],
       "matches": [
         "https://web.whatsapp.com/*"

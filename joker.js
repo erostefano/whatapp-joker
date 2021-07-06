@@ -10,7 +10,7 @@ window.addEventListener('click', () => {
     }
 
     let joker = document.createElement("img");
-    joker.src = chrome.runtime.getURL('joker.svg');
+    joker.src = chrome.runtime.getURL('img/joker.svg');
     joker.style.padding = '0.5rem';
     joker.style.height = '1.5rem';
     joker.style.cursor = 'pointer';
