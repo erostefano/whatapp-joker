@@ -4,12 +4,12 @@ window.addEventListener('click', () => {
     }
 
     // create joker
-    const search = document.querySelector("#main > header > div._1IeOz > div > div._2n-zq > div");
+    const search = document.querySelector("[aria-label='Search…']");
     if (!search) {
         return;
     }
 
-    let joker = document.createElement("img");
+    let joker = document.createElement('img');
     joker.src = chrome.runtime.getURL('img/joker.svg');
     joker.style.padding = '0.5rem';
     joker.style.height = '1.5rem';
@@ -18,15 +18,15 @@ window.addEventListener('click', () => {
     joker.setAttribute('title', 'Joker');
     joker.setAttribute('aria-label', 'Joker');
     joker.addEventListener('click', () => {
-        const inputText = document.querySelector("#main > footer > div.vR1LG._3wXwX.copyable-area > div._2A8P4 > div > div._2_1wd.copyable-text.selectable-text");
+        const inputText = document.querySelectorAll(".copyable-text.selectable-text[contenteditable='true']")[1];
 
         const request = new XMLHttpRequest();
-        request.open("GET", "https://v2.jokeapi.dev/joke/Any?blacklistFlags=religious,political,racist&format=txt");
+        request.open('GET', 'https://v2.jokeapi.dev/joke/Any?blacklistFlags=religious,political,racist&format=txt');
         request.addEventListener('load', () => {
             if (request.status >= 200 && request.status < 300) {
                 inputText.innerHTML = request.responseText;
                 inputText.dispatchEvent(new Event('input', {bubbles: true}));
-                const send = document.querySelector("#main > footer > div.vR1LG._3wXwX.copyable-area > div:nth-child(3) > button");
+                const send = document.querySelector("[data-icon='send']").parentElement;
                 send.click();
             } else {
                 console.warn(request.statusText, request.responseText);
@@ -36,6 +36,6 @@ window.addEventListener('click', () => {
     });
 
     // append joker
-    const parent = document.querySelector("#main > header > div._1IeOz > div")
+    const parent = search.parentElement.parentElement;
     parent.appendChild(joker);
 })
