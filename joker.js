@@ -4,7 +4,7 @@ window.addEventListener('click', () => {
     }
 
     // create joker
-    const search = document.querySelector("[aria-label='Search…']");
+    const search = document.querySelector("[data-testid='search-alt']");
     if (!search) {
         return;
     }
@@ -26,7 +26,7 @@ window.addEventListener('click', () => {
             if (request.status >= 200 && request.status < 300) {
                 inputText.innerHTML = request.responseText;
                 inputText.dispatchEvent(new Event('input', {bubbles: true}));
-                const send = document.querySelector("[data-icon='send']").parentElement;
+                const send = document.querySelector("[data-testid='send']").parentElement;
                 send.click();
             } else {
                 console.warn(request.statusText, request.responseText);
@@ -36,6 +36,6 @@ window.addEventListener('click', () => {
     });
 
     // append joker
-    const parent = search.parentElement.parentElement;
+    const parent = search.parentElement.parentElement.parentElement;
     parent.appendChild(joker);
 })
