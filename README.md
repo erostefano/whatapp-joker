@@ -6,6 +6,12 @@ This Chrome Extension adds a button by which you can send a random joke to your 
 
 ## Install
 
+Install it directly from
+the [Chrome Web Store](https://chrome.google.com/webstore/detail/whatsapp-web-joker/dijfkmldhiehmbhcmmjnmlmfcljlmjbo?hl=en).
+
+or
+
+Follow these three steps
 1. Download project
 2. Enable developer mode in Chrome
 3. Load unpacked project in Chrome
